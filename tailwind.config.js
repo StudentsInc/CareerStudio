@@ -46,6 +46,7 @@ export default {
         "button-flat":
           "0px 4px 4px 0px rgba(249, 247, 243, 0.25) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset",
         "progress-bar": "0px 0px 11.5px #6097FF;",
+        card: "6px 6px 15px 0px rgba(0, 0, 0, 0.57)",
       },
     },
   },
