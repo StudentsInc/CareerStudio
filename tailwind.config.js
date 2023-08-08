@@ -16,6 +16,8 @@ export default {
         "green-success": "#29A35A",
         "gray-progress-bar": "#6B7280",
         "gray-text": "#D1D5DB",
+        "gray-button":"#2D3748",
+        "gray-light":"#828282",
       },
       screens: {
         xs: "480px",
