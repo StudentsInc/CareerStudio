@@ -7,8 +7,14 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />}>
-                    <Route path="/" element={<Home />} />
                     <Route path="/dashboard" element={<Dashboard />} />
+                    <Route path="/settings" element={<></>} />
+                    <Route path="/bookings" element={<></>} />
+                    <Route path="/school" element={<></>} />
+                    <Route path="/school" element={<></>} />
+                    <Route path="/career" element={<></>} />
+                    <Route path="/major" element={<></>} />
+                    <Route path="/school" element={<></>} />
                 </Route>
             </Routes>
         </BrowserRouter>
