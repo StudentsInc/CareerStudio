@@ -8,7 +8,7 @@ export default {
         DEFAULT: "1.25rem",
         sm: "2rem",
         md: "3.125rem",
-        lg: "6rem",
+        lg: "8rem",
       },
     },
     extend: {
@@ -28,6 +28,7 @@ export default {
         "blue-card-bg-dark": "#0A0A10",
         "blue-progress": "#6097FF",
         "purple-color": "#7860BD",
+        "purple-hover": "#6b55ac",
         "yellow-color": "#FFAB6B",
         "red-error": "#EF4444",
         "green-success": "#29A35A",
