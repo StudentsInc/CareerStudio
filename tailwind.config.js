@@ -5,11 +5,10 @@ export default {
     container: {
       center: true,
       padding: {
-        DEFAULT: "1rem",
+        DEFAULT: "1.25rem",
         sm: "2rem",
-        lg: "3rem",
-        xl: "5rem",
-        "2xl": "6rem",
+        md: "3.125rem",
+        lg: "8rem",
       },
     },
     extend: {
@@ -47,6 +46,8 @@ export default {
         button: "4px 4px 24px 0px rgba(74, 73, 224, 0.51);",
         "button-flat":
           "0px 4px 4px 0px rgba(249, 247, 243, 0.25) inset, 0px -4px 4px 0px rgba(0, 0, 0, 0.25) inset",
+        "button-cloudy":
+          "0px 2px 20px 0px rgba(0, 0, 0, 0.60) inset, 0px 8px 24px 0px rgba(0, 0, 0, 0.30)",
         "progress-bar": "0px 0px 11.5px #6097FF;",
         card: "6px 6px 15px 0px rgba(0, 0, 0, 0.57)",
       },
