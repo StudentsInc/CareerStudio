@@ -54,7 +54,6 @@
   }
 }
 
-
 .hero_sec .info .special {
   background: linear-gradient(180deg, #F8A76F 42.37%, #4F5FEB 88.31%);
   background-clip: text;
@@ -62,6 +61,37 @@
   -webkit-text-fill-color: transparent;
 }
 
+/* style swiper pagination */
+.carousel .swiper-pagination {
+  position: relative;
+  bottom: -4.5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .carousel .swiper-pagination {
+    bottom: -2.5rem !important
+  }
+}
+
+.carousel .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px !important;
+  opacity: 0.5;
+  background: #4746DE;
+}
+
+.carousel .swiper-pagination-bullet-active {
+  background: #3D3BFF;
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+}
+
+/* end swiper pagination */
 /* end HomePage */
 
 
