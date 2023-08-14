@@ -17,6 +17,7 @@ import {
 	wavyShapeWeb,
 } from "../assets/images";
 import GoldStar from "../components/Home/GoldStart";
+import Footer from "../components/Footer/Footer";
 const Home = () => {
 	const journey_sec = HomeData.journey_sec;
 	const join_sec = HomeData.join_sec;
@@ -313,6 +314,7 @@ const Home = () => {
 							}
 						/>
 					</section>
+					<Footer />
 				</main>
 			</div>
 		</div>
