@@ -23,9 +23,9 @@
 @media (max-width: 991px) {
   .Home::after {
     background-image:
-      url("/src/assets/images/homePage/wavyBack1.png"),
-      url("/src/assets/images/homePage/wavyBack2.png"),
-      url("/src/assets/images/homePage/wavyBack3.png");
+      url("/src/assets/images/homePage/wavy/wavyBack1.png"),
+      url("/src/assets/images/homePage/wavy/wavyBack2.png"),
+      url("/src/assets/images/homePage/wavy/wavyBack3.png");
     background-size: 1627.179px, 1720.367px, 200%;
     background-position: top, top, 50% 150px;
     background-repeat: no-repeat;
@@ -35,18 +35,18 @@
 /* make browsers loades images in WebP format if it is supported*/
 @supports (background-image: url("image.webp")) {
   .Home::after {
-    background-image: url('/src/assets/images/homePage/wavyBack1.webp'),
-      url("/src/assets/images/homePage/wavyBack2.webp"),
-      url("/src/assets/images/homePage/wavyBack3.webp");
+    background-image: url('/src/assets/images/homePage/wavy/wavyBack1.webp'),
+      url("/src/assets/images/homePage/wavy/wavyBack2.webp"),
+      url("/src/assets/images/homePage/wavy/wavyBack3.webp");
   }
 }
 
 @media (max-width:480px) {
   .Home::after {
     background-image:
-      url("/src/assets/images/homePage/wavyBackMob1.png"),
-      url("/src/assets/images/homePage/wavyBackMob2.png"),
-      url("/src/assets/images/homePage/wavyBackMob3.png");
+      url("/src/assets/images/homePage/wavy/wavyBackMob1.png"),
+      url("/src/assets/images/homePage/wavy/wavyBackMob2.png"),
+      url("/src/assets/images/homePage/wavy/wavyBackMob3.png");
     background-size: 30rem;
     background-position: right top, right top, right 30px;
     background-repeat: no-repeat;

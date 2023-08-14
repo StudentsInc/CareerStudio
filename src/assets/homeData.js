@@ -1,4 +1,4 @@
-import { carousel1Png, carousel1Webp, carousel2Png, carousel2Webp, carousel3Png, carousel3Webp } from "./images"
+import { carousel1Png, carousel1Webp, carousel2Png, carousel2Webp, carousel3Png, carousel3Webp, ellipse1, ellipse2, ellipse3, ellipse4, ellipse5, ellipse6 } from "./images"
 const homeData = {
 	"carouselContents": [
 		{
@@ -29,6 +29,52 @@ const homeData = {
 			"imageWebp": carousel3Webp,
 			"alt": "Illustration symbolizing the beginning of a journey with tools and resources to shape one's future."
 		}
-	]
+	],
+	"journey_sec": [
+		{
+			"id": 1,
+			"img": ellipse1,
+			"number": 800,
+			"head": "Careers",
+			"info": "Ever wondered what an Ichthyologist does? Or a Philologist? We've got those and 798 more career profiles, just waiting for you to discover. Dive into our pool of opportunities and find your perfect fit. Be warned: choice overload is a real thing here!",
+			"txtBtn": "Dive In Now"
+		},
+		{
+			"id": 2,
+			"img": ellipse2,
+			"number": 300,
+			"head": "Majors",
+			"info": "From Anthropology to Zoology, and everything in between – we've got the ABCs of all the majors you could possibly dream of. Ready to untangle the spaghetti of choices and find your perfect major match? We're here to help!",
+			"txtBtn": "Untangle Now"
+		},
+		{
+			"id": 3,
+			"img": ellipse3,
+			"number": 31097,
+			"head": "Collage",
+			"info": "Big, small, urban, rural, party school, or academic powerhouse? With over 3100 colleges to choose from, we've got the lowdown on all of them. The only thing missing is your choice. Ready to embark on a virtual college tour",
+			"txtBtn": "Start Touring"
+		}
+	],
+	"join_sec": [
+		{
+			"id": 1,
+			"img": ellipse4,
+			"head": "By Students, For Students",
+			"info": "We get you, because we are you! Student Inc. is created by students, for students. We know the struggles, the uncertainties, the late-night pizza-fueled study sessions. We've been there, done that, got the t-shirt"
+		},
+		{
+			"id": 2,
+			"img": ellipse5,
+			"head": "Simplicity is our middle \n name",
+			"info": "No jargon, no fluff, no 10-step processes. Just a simple, straightforward tool that gets you where you want to go"
+		},
+		{
+			"id": 3,
+			"img": ellipse6,
+			"head": "Personalized for You",
+			"info": "With our unique personality and interest assessment, you're not just getting generic advice. We match you with careers, majors, and colleges that fit YOU!"
+		}
+	],
 }
 export default homeData;
