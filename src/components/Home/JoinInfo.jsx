@@ -9,7 +9,7 @@ const JoinInfo = (props) => {
 				{props.info}
 			</p>
 			{props.id == 1 && (
-				<div className='wavy-line after:w-[750.163px] after:h-[796.032px]  lg:after:absolute lg:after:content-[""] after:bg-[url("/src/assets/images/wavy/wavyLine.png")] after:left-[50px] after:top-[35px] after:bg-no-repeat after:bg-cover'></div>
+				<div className='wavy-line after:w-[750.163px] after:h-[796.032px]  lg:after:absolute lg:after:content-[""] after:bg-[url("/src/assets/images/homePage/wavy/wavyLine.png")] after:left-[50px] after:top-[35px] after:bg-no-repeat after:bg-cover'></div>
 			)}
 		</div>
 	);
