@@ -2,7 +2,13 @@ import "./pagesStyle.css";
 import GradientShape from "../components/GradientShape";
 import { Link } from "react-router-dom";
 import Carousel_Sec from "../components/Home/Carousel_Sec";
+import JouneyInfo from "../components/Home/JouneyInfo";
+import JoinInfo from "../components/Home/JoinInfo";
+import HomeData from "/src/assets/homeData.js";
+import { wavyShape, wavyShapeWeb } from "../assets/images";
 const Home = () => {
+	const journey_sec = HomeData.journey_sec;
+	const join_sec = HomeData.join_sec;
 	return (
 		<div className='Home overflow-hidden min-h-[100vh]'>
 			<div className='absolute left[100px] md:left-[400px]'>
@@ -90,6 +96,102 @@ const Home = () => {
 						<GradientShape
 							circleStyle={
 								"-right-[158px] bottom-0 top-[450px] w-[310px] h-[316.5px] opacity-[0.3] blur-[60px]"
+							}
+						/>
+					</section>
+					<section
+						data-aos='fade-up'
+						data-aos-duration='600'
+						data-aos-offset='300'
+						data-aos-delay='50'
+						className='journey relative'>
+						<h2 className='font-bold text-[2.56rem] sm:text-[3.43rem] md:w-[893px] mb-[15px] uppercase'>
+							<span className='text-blue-secondary'>Your</span> Journey,
+							<span className='text-blue-secondary'> Your</span> Choices!
+						</h2>
+						<div>
+							<p className='font-normal ms-auto text-[1.25rem] sm:w-[546px]'>
+								With a world of careers, majors, and colleges at your
+								fingertips, let's make choosing feel less like rocket science
+								and more like a fun road trip
+							</p>
+							<div className='journey_info pt-20 flex-col lg:flex-row gap-[6rem] flex items-center justify-between mt-[48px]'>
+								{journey_sec.map((info) => (
+									<JouneyInfo
+										key={info.id}
+										id={info.id}
+										img={info.img}
+										number={info.number}
+										head={info.head}
+										info={info.info}
+										txtBtn={info.txtBtn}
+									/>
+								))}
+							</div>
+						</div>
+						<GradientShape
+							circleStyle={
+								"-right-[150px] -top-[25px] w-[516px] h-[528px] opacity-50 blur-[60px]"
+							}
+						/>
+					</section>
+					<section
+						data-aos='fade-up'
+						data-aos-offset='400'
+						data-aos-duration='500'
+						className='join_info relative mt-[119px] flex flex-col'>
+						<h2 className='flex justify-end font-bold text-[2.56rem] sm:text-[3.13rem] leading-[60px] uppercase mb-[63px]'>
+							Why Join the <br /> Student Inc. Squad
+						</h2>
+						{join_sec.map((info) => (
+							<JoinInfo
+								key={info.id}
+								id={info.id}
+								img={info.img}
+								head={info.head}
+								info={info.info}
+							/>
+						))}
+						<div className='moreJoin_info py-[100px] relative mt-[164px] sm:ms-[100px]'>
+							<p
+								data-aos='fade-right'
+								data-aos-offset='300'
+								data-aos-duration='500'
+								className='w-full sm:w-[474px] shrink-0 text-[1.13rem] sm:text-[1.7rem]  font-medium'>
+								We're not just a faceless company. We're students like you, who
+								were tired of feeling lost and confused about our futures. So,
+								we rolled up our sleeves and built Student Inc. to make the
+								journey less daunting and more exciting.
+							</p>
+							<div
+								data-aos='fade-left'
+								data-aos-duration='400'
+								className='img_container absolute bottom-1 sm:bottom-0 md:-bottom-[6rem] -z-10 -right-[11rem] xl:-right-[6rem]'>
+								<picture>
+									<source type='image/webp' srcSet={wavyShapeWeb}></source>
+									<img
+										className='rounded-[23px] opacity-60 md:opacity-100 scale-[1.7] md:scale-100'
+										src={wavyShape}
+										width='772px'
+										height='431px'
+										alt='Colorful wavy image representing XYZ'
+									/>
+								</picture>
+							</div>
+						</div>
+						<GradientShape
+							circleStyle={
+								" left-[250px] top-[-25px] w-[394px] h-[403px] opacity-50 blur-[60px] "
+							}
+						/>
+						<GradientShape
+							circleStyle={
+								"-left-[158px] bottom-[800px] w-[317px] h-[325px] opacity-50 blur-[60px] "
+							}
+						/>
+						<GradientShape
+							circleStyle={
+								"left-[300px] bottom-[150px] w-[450px] h-[461px] opacity-50 blur-[60px] "
 							}
 						/>
 					</section>
