@@ -22,3 +22,4 @@ export function useClickOutside(callback) {
 
 	return ref;
 }
+// end clickOutside function

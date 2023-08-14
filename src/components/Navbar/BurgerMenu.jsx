@@ -6,7 +6,7 @@ const BurgerMenu = () => {
 
 	const toggleMenu = (e) => {
 		e.preventDefault();
-		setIsOpen(!isOpen);
+		setIsOpen((prev) => !prev);
 	};
 
 	return (
