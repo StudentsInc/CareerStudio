@@ -1,0 +1,7 @@
+export { default as logo } from "./logo.svg"
+export { default as carousel1Png } from "./homePage/carousel-img1.png"
+export { default as carousel1Webp } from "./homePage/carousel-img1.webp"
+export { default as carousel2Png } from "./homePage/carousel-img2.png"
+export { default as carousel2Webp } from "./homePage/carousel-img2.webp"
+export { default as carousel3Png } from "./homePage/carousel-img3.png"
+export { default as carousel3Webp } from "./homePage/carousel-img3.webp"
