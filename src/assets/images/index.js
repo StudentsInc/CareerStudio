@@ -21,3 +21,12 @@ export { default as person5 } from "./homePage/people/person5.png"
 export { default as person6 } from "./homePage/people/person6.png"
 export { default as person7 } from "./homePage/people/person7.png"
 
+// dashboard 
+export { default as interest1 } from "./dashboard/icons/interest1.png"
+export { default as interest2 } from "./dashboard/icons/interest2.png"
+export { default as interest3 } from "./dashboard/icons/interest3.png"
+export { default as interest4 } from "./dashboard/icons/interest4.png"
+export { default as interest5 } from "./dashboard/icons/interest5.png"
+export { default as interest6 } from "./dashboard/icons/interest6.png"
+
+
