@@ -7,7 +7,7 @@ const Navbar = () => {
 	return (
 		<div className='navbar relative '>
 			<div className='container'>
-				<div className='navContent flex justify-between items-center min-h-[70px] pt-8'>
+				<div className='navContent flex justify-between items-center min-h-[70px] py-8'>
 					<Logo
 						txt1='Career'
 						txt2='Studio'
