@@ -1,6 +1,6 @@
 const GradientShape = (props) => {
 	const defaultGradients = [
-		"circle at center, var(--yellow-color), transparent 70%",
+		"circle at center, var(--yellow-main), transparent 70%",
 		"circle at bottom, var(--blue-main), transparent 100%",
 	];
 

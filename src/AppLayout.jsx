@@ -8,7 +8,7 @@ const AppLayout = ({ children }) => {
 	const shouldShowNavbar = !excludeNavbarPaths.includes(location.pathname);
 
 	return (
-		<div className='relative '>
+		<div className='relative overflow-hidden'>
 			<BtnToTop />
 			{shouldShowNavbar && <Navbar />}
 			{children}

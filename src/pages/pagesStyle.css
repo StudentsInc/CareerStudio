@@ -1,3 +1,102 @@
+/* start HomePage */
+.Home::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    url('/src/assets/images/homePage/wavyBack1.png'),
+    url("/src/assets/images/homePage/wavyBack2.png"),
+    url("/src/assets/images/homePage/wavyBack3.png");
+  background-size: 1627.179px, 1715.019px, 1608.098px;
+  background-position: top, top center, right 100px;
+  background-repeat: no-repeat;
+  mix-blend-mode: screen;
+  background-size: contain;
+  width: 100%;
+  z-index: -1;
+  opacity: 40%;
+}
+
+
+@media (max-width: 991px) {
+  .Home::after {
+    background-image:
+      url("/src/assets/images/homePage/wavy/wavyBack1.png"),
+      url("/src/assets/images/homePage/wavy/wavyBack2.png"),
+      url("/src/assets/images/homePage/wavy/wavyBack3.png");
+    background-size: 1627.179px, 1720.367px, 200%;
+    background-position: top, top, 50% 150px;
+    background-repeat: no-repeat;
+  }
+}
+
+/* make browsers loades images in WebP format if it is supported*/
+@supports (background-image: url("image.webp")) {
+  .Home::after {
+    background-image: url('/src/assets/images/homePage/wavy/wavyBack1.webp'),
+      url("/src/assets/images/homePage/wavy/wavyBack2.webp"),
+      url("/src/assets/images/homePage/wavy/wavyBack3.webp");
+  }
+}
+
+@media (max-width:480px) {
+  .Home::after {
+    background-image:
+      url("/src/assets/images/homePage/wavy/wavyBackMob1.png"),
+      url("/src/assets/images/homePage/wavy/wavyBackMob2.png"),
+      url("/src/assets/images/homePage/wavy/wavyBackMob3.png");
+    background-size: 30rem;
+    background-position: right top, right top, right 30px;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+  }
+}
+
+.hero_sec .info .special {
+  background: linear-gradient(180deg, #F8A76F 42.37%, #4F5FEB 88.31%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* style swiper pagination */
+.carousel .swiper-pagination {
+  position: relative;
+  bottom: -4.5rem !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media (max-width: 768px) {
+  .carousel .swiper-pagination {
+    bottom: -2.5rem !important
+  }
+}
+
+.carousel .swiper-pagination-bullet {
+  width: 20px;
+  height: 20px;
+  margin: 0 8px !important;
+  opacity: 0.5;
+  background: #4746DE;
+}
+
+.carousel .swiper-pagination-bullet-active {
+  background: #3D3BFF;
+  width: 24px;
+  height: 24px;
+  opacity: 1;
+}
+
+/* end swiper pagination */
+/* end HomePage */
+
+
+
+
 /* Loader animation */
 .loader div {
   animation: loader 1s linear infinite;
