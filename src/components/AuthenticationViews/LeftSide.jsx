@@ -22,6 +22,7 @@ const LeftSide = () => {
           txtStyle={"font-bold text-[1.875rem]"}
           imgStyle={"h-[44px] w-[44px] md:h-[60px] md:w-[60px]"}
           imgUrl={logo}
+          logoStyle={"hidden md:flex items-center gap-[12.8px]"}
         />
         {/* 1.875rem === 30px === 3xl*/}
       </div>
