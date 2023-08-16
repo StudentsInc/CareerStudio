@@ -167,44 +167,52 @@ const Form = (props) => {
     }
   };
   return (
-    <form className="mt-10" onSubmit={submitHandle}>
-      <div className="sm:flex">
-        <div className="sm:w-1/2 flex flex-col">
+    <form className='mt-10' onSubmit={submitHandle}>
+      <div className='sm:flex'>
+        <div className='sm:w-1/2 flex flex-col'>
           <label
-            className="text-gray-color relative input__label w-fit"
-            htmlFor="full-name"
+            className='text-gray-color relative input__label w-fit'
+            htmlFor='full-name'
           >
             Full Name
           </label>
           <input
-            type="text"
-            name="full-name"
-            id="full-name"
+            type='text'
+            name='full-name'
+            id='full-name'
             className={`sm:mr-5 mt-3 text-white px-[20px] py-[16px] border-1 ${
-              fullNameState.isValid ? "border-green-500" : ""
+              fullNameState.isValid
+                ? "border-green"
+                : fullNameState.isValid === false
+                ? "border-red"
+                : "border-gray-300"
             } outline-none bg-transparent rounded-md border border-gray-300`}
-            placeholder="Jhon Snow"
+            placeholder='Jhon Snow'
             required
             onChange={handlechangeFullName}
             onBlur={validateFullName}
             value={fullNameState.value}
           />
         </div>
-        <div className="sm:w-1/2 flex flex-col min-[200px]:mt-3 sm:mt-0">
+        <div className='sm:w-1/2 flex flex-col min-[200px]:mt-3 sm:mt-0'>
           <label
-            className="text-gray-color relative input__label w-fit"
-            htmlFor="user-name"
+            className='text-gray-color relative input__label w-fit'
+            htmlFor='user-name'
           >
             User Name
           </label>
           <input
-            type="text"
-            name="user-name"
-            id="user-name"
+            type='text'
+            name='user-name'
+            id='user-name'
             className={`mt-3 text-white pr-5 border-1 px-[20px] py-[16px] ${
-              userNameState.isValid ? "border-green-500" : ""
+              userNameState.isValid
+                ? "border-green"
+                : userNameState.isValid === false
+                ? "border-red"
+                : "border-gray-300"
             } outline-none bg-transparent rounded-md border border-gray-300`}
-            placeholder="Jhon Snow"
+            placeholder='Jhon Snow'
             required
             onChange={handlechangeUserName}
             onBlur={validateUserName}
@@ -213,80 +221,88 @@ const Form = (props) => {
         </div>
       </div>
 
-      <div className="flex flex-col mt-3">
+      <div className='flex flex-col mt-3'>
         <label
-          className="text-gray-color relative input__label w-fit"
-          htmlFor="email-address"
+          className='text-gray-color relative input__label w-fit'
+          htmlFor='email-address'
         >
           Email Address
         </label>
         <input
-          type="email"
-          name="email-address"
-          id="email-address"
+          type='email'
+          name='email-address'
+          id='email-address'
           className={`mt-3 text-white pr-5 border-1 px-[20px] py-[16px] ${
-            emailState.isValid ? "border-green-500" : ""
+            emailState.isValid
+              ? "border-green"
+              : emailState.isValid === false
+              ? "border-red"
+              : "border-gray-300"
           } outline-none bg-transparent rounded-md border border-gray-300`}
-          placeholder="WinterIsComing@gmail.com"
+          placeholder='WinterIsComing@gmail.com'
           onChange={handleChangeEmail}
           onBlur={validateEmail}
           value={emailState.value}
         />
       </div>
-      <div className="flex flex-col mt-3">
+      <div className='flex flex-col mt-3'>
         <label
-          className="text-gray-color relative input__label w-fit"
-          htmlFor="password"
+          className='text-gray-color relative input__label w-fit'
+          htmlFor='password'
         >
           Password
         </label>
         <input
-          type="password"
-          name="password"
-          id="password"
+          type='password'
+          name='password'
+          id='password'
           className={`mt-3 text-white pr-5 border-1 px-[20px] py-[16px] ${
-            passwordState.isValid ? "border-green-500" : ""
+            passwordState.isValid
+              ? "border-green"
+              : passwordState.isValid === false
+              ? "border-red"
+              : "border-gray-300"
           } outline-none bg-transparent rounded-md border border-gray-300`}
-          placeholder="Contains 8 characters atleast"
+          placeholder='Contains 8 characters atleast'
           onChange={handleChangePassword}
           onBlur={validatePassword}
           value={passwordState.value}
         />
       </div>
 
-      <div className="mt-3">
-        <div className="checkboxes__item">
-          <label className="checkbox style-d text-gray-color flex relative cursor-pointer select-none">
+      <div className='mt-3'>
+        <div className='checkboxes__item'>
+          <label className='checkbox style-d text-gray-color flex relative cursor-pointer select-none'>
             <div>
               <input
-                type="checkbox"
-                className="opacity-0 cursor-pointer absolute"
-                name="newsletter"
+                type='checkbox'
+                className='opacity-0 cursor-pointer absolute'
+                name='newsletter'
               />
-              <div className="checkbox__checkmark relative mr-4 top-1 left-0 h-[22px] w-[22px] bg-transparent border-2 border-gray-300 transition ease-in-out duration-250 rounded-full"></div>
+              <div className='checkbox__checkmark relative mr-4 top-1 left-0 h-[22px] w-[22px] bg-transparent border-2 border-gray-300 transition ease-in-out duration-250 rounded-full'></div>
             </div>
             <div>I would like to receive newsletter</div>
           </label>
         </div>
 
-        <div className="checkboxes__item mt-3">
-          <label className="checkbox style-d text-gray-color flex items-start relative cursor-pointer select-none">
+        <div className='checkboxes__item mt-3'>
+          <label className='checkbox style-d text-gray-color flex items-start relative cursor-pointer select-none'>
             <div>
               <input
-                type="checkbox"
-                className="opacity-0 cursor-pointer absolute"
-                name="agreement"
+                type='checkbox'
+                className='opacity-0 cursor-pointer absolute'
+                name='agreement'
               />
-              <div className="checkbox__checkmark relative mr-4 top-1 left-0 h-[22px] w-[22px] bg-transparent border-2 border-gray-300 transition ease-in-out duration-250 rounded-full"></div>
+              <div className='checkbox__checkmark relative mr-4 top-1 left-0 h-[22px] w-[22px] bg-transparent border-2 border-gray-300 transition ease-in-out duration-250 rounded-full'></div>
             </div>
             <div>
               By continuing, you agree to our
-              <span className="text-blue-dark">
-                <a href="#"> Terms of Service</a>
+              <span className='text-blue-dark'>
+                <a href='#'> Terms of Service</a>
               </span>{" "}
               and have read our
-              <span className="text-blue-dark">
-                <a href="#"> Privacy Policy</a>
+              <span className='text-blue-dark'>
+                <a href='#'> Privacy Policy</a>
               </span>
               .
             </div>
