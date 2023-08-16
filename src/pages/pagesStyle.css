@@ -104,15 +104,15 @@
 
 @keyframes loader {
   0% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   50% {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
@@ -120,7 +120,7 @@
 
 /* Not found page */
 .notfound-404 h1 {
-  text-shadow: -1px -1px 0 var(--blue-main), 1px 1px 0 var(--yellow-main)
+  text-shadow: -1px -1px 0 var(--blue-main), 1px 1px 0 var(--yellow-main);
 }
 
 .notfound-404 span {
@@ -128,3 +128,55 @@
 }
 
 /* end found page */
+
+/* start left side style */
+.leftImages::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  background-image: url("/src/assets/images/authenticationViews/top-left-img.png"),
+    url("/src/assets/images/authenticationViews/top-right-img.png"),
+    url("/src/assets/images/authenticationViews/bottom-img.png");
+  background-size: auto auto, auto auto, 57rem auto;
+  background-position: top left, 9.5rem 0%, bottom left;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.reset_left_images::after {
+  background-position: 0% -2rem, 10rem 0%, 0% 150% !important;
+}
+
+/* end left side style */
+
+/* start signup form style */
+.input__label::after {
+  content: "*";
+  position: absolute;
+  color: red;
+  top: 1px;
+  right: -10px;
+}
+/* Checkbox style with after */
+.checkbox.style-d input:checked ~ .checkbox__checkmark:after {
+  opacity: 1;
+}
+.checkbox.style-d .checkbox__checkmark:after {
+  content: "";
+  position: absolute;
+  top: 15%;
+  left: 40%;
+  transform: translate(-50%, -50%);
+  width: 5px;
+  height: 10px;
+  border: solid #bdbdbd;
+  border-width: 0 2px 2px 0;
+  transform: rotate(45deg);
+  opacity: 0;
+  transition: opacity 0.25s ease;
+}
+/* end signup form style */
