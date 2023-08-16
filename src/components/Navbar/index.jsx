@@ -14,6 +14,7 @@ const Navbar = () => {
 						imgStyle={"w-[35px] h-[35px]"}
 						txtStyle={"text-[18px]"}
 						imgUrl={logo}
+						logoStyle={"logo hidden md:flex items-center gap-2"}
 					/>
 					<BurgerMenu />
 					<div className='Links flex justify-between items-center gap-[28px]'>
