@@ -46,6 +46,7 @@ export default {
       },
       boxShadow: {
         'dark-inset': '0 4px 20px 0px rgba(0, 0, 0, 0.60) inset, 0 8px 24px 0px rgba(0, 0, 0, 0.25) inset',
+        'dark-ouset': '6px 6px 15.2px 0px rgba(0, 0, 0, 0.57)',
         'light-inset': '0px 4.21px 4.21px 0px rgba(249,247, 243, 0.25) inset, 0px -4.21px 4.21px 0px rgba(0, 0, 0, 0.25) inset',
         'light-ouset': '4px 4px 24px 0px rgba(74, 73, 224, 0.51)'
       },

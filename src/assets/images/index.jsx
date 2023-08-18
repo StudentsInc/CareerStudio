@@ -27,9 +27,9 @@ export { default as google } from "./authenticationViews/Google.png";
 export { default as facebook } from "./authenticationViews/Facebook.png";
 
 // dashboard
-export { default as interest1 } from "./dashboard/icons/interest1.png";
-export { default as interest2 } from "./dashboard/icons/interest2.png";
-export { default as interest3 } from "./dashboard/icons/interest3.png";
-export { default as interest4 } from "./dashboard/icons/interest4.png";
-export { default as interest5 } from "./dashboard/icons/interest5.png";
-export { default as interest6 } from "./dashboard/icons/interest6.png";
+export { default as interest1 } from "./dashboard/icons/interest1.svg";
+export { default as interest2 } from "./dashboard/icons/interest2.svg";
+export { default as interest3 } from "./dashboard/icons/interest3.svg";
+export { default as interest4 } from "./dashboard/icons/interest4.svg";
+export { default as interest5 } from "./dashboard/icons/interest5.svg";
+export { default as interest6 } from "./dashboard/icons/interest6.svg";
