@@ -94,7 +94,51 @@
 /* end swiper pagination */
 /* end HomePage */
 
+/*start dashboard */
+.dashboard::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-image: url("/src/assets/images/dashboard/wavyBack1.png");
+  background-repeat: no-repeat;
+  width: 800px;
+  height: 360px;
+  z-index: -1;
+  background-size: contain
+}
 
+.dashboard::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background-image: url("/src/assets/images/dashboard/wavyBack2.png");
+  background-repeat: no-repeat;
+  width: 300px;
+  height: 1000px;
+  z-index: -1;
+  background-size: contain
+}
+
+/* make browsers loades images in WebP format if it is supported*/
+@supports (background-image: url("image.webp")) {
+  .dashboard::after {
+    background-image: url("/src/assets/images/dashboard/wavyBack1.webp");
+  }
+
+  .dashboard::before {
+    background-image: url("/src/assets/images/dashboard/wavyBack2.webp");
+  }
+}
+
+@media(max-width:991px) {
+  .dashboard::before {
+    display: none;
+  }
+}
+
+/* end dashboard */
 
 
 /* Loader animation */
