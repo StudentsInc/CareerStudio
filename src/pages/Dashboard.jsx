@@ -5,11 +5,12 @@ import Personality from "../components/Dashboard/Personality";
 import dashboardData from "../assets/dashboardData";
 import Interests from "../components/Dashboard/Interests";
 import LearningStyle from "../components/Dashboard/LearningStyle";
+import "./pagesStyle.css";
 const dashboard = () => {
 	const { personality } = dashboardData;
 	personality;
 	return (
-		<main className='page-content mt-[1rem] mb-[82px]'>
+		<main className='page_content dashboard min-h-screen relative mt-[1rem] pb-[82px]'>
 			<div className='container'>
 				<div className='card_container flex items-center flex-wrap lg:flex-nowrap gap-[15px] justify-center md:justify-between'>
 					<Card
