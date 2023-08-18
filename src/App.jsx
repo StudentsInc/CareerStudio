@@ -9,6 +9,7 @@ const Signup = lazy(() => import("./pages/Signup"));
 const Login = lazy(() => import("./pages/Login"));
 const ForgotPass = lazy(() => import("./pages/ForgotPass"));
 const ResetPass = lazy(() => import("./pages/ResetPass"));
+const Dashboard = lazy(() => import("./pages/Dashboard"));
 const NotFound = lazy(() => import("./pages/NotFound"));
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
 					<Route path='/login' element={<Login />} />
 					<Route path='/forgotPassword' element={<ForgotPass />} />
 					<Route path='/resetPassword' element={<ResetPass />} />
+					<Route path='/dashboard' element={<Dashboard />} />
 					<Route path='*' element={<NotFound />} />
 				</Routes>
 			</Suspense>

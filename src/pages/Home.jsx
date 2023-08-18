@@ -51,7 +51,7 @@ const Home = () => {
 							]}
 						/>
 					</div>
-					<section className='hero_sec pt-[105px] lg:w-[600px] max-xl:w-full relative text-white '>
+					<section className='hero_sec pt-[75px] lg:w-[600px] max-xl:w-full relative text-white '>
 						<GradientShape
 							circleStyle={
 								"top-40 left-[120%] w-[150px] h-[150px] opacity-[0.4] blur-[10px] mix-blend-color-dodge"
