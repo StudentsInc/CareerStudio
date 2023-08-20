@@ -43,8 +43,8 @@ const Carousel_Sec = () => {
 							</div>
 							<div
 								data-aos='fade-left'
-								data-aos-offset='100'
-								data-aos-duration='500'
+								data-aos-offset='200'
+								data-aos-duration='600'
 								className='img_container'>
 								<div className='relative p-2 w-100 shadow-[0px_12px_45px_0px] shadow-blue-secondary/50'>
 									<picture>

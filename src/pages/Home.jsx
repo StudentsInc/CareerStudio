@@ -178,7 +178,8 @@ const Home = () => {
 							</p>
 							<div
 								data-aos='fade-left'
-								data-aos-duration='400'
+								data-aos-offset='400'
+								data-aos-duration='500'
 								className='img_container absolute bottom-1 sm:bottom-0 md:-bottom-[6rem] -z-10 -right-[11rem] xl:-right-[6rem]'>
 								<picture width='772px'>
 									<source
@@ -254,9 +255,9 @@ const Home = () => {
 							</div>
 							<div
 								data-aos='fade-left'
-								data-aos-offset='400'
-								data-aos-duration='600'
-								data-aos-delay='500'
+								data-aos-offset='200'
+								data-aos-duration='700'
+								data-aos-delay='200'
 								className='gallery hidden md:grid grid grid-cols-3 grid-rows-auto h-full mx-auto transition duration-500 gap-x-[20px]'>
 								<div className='HolderImage self-center grid gap-y-[20px]'>
 									<figure className='gallery-item1 w-[126px] h-[126px]'>
