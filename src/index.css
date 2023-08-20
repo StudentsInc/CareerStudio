@@ -4,7 +4,8 @@
 
 @layer base {
   :root {
-    --blue-main: #4544DC;
-    --yellow-main: #FFAB6B;
+    --blue-main: #4B47D9;
+    --yellow-main: #F8A76F;
+    --yellow-secondary: #FDAA6D;
   }
 }
