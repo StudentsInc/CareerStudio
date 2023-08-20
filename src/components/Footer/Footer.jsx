@@ -9,12 +9,8 @@ const Footer = () => {
 			<div className='hidden md:block'>
 				<CircleShape
 					circleStyle={
-						"-left-[12rem] bottom-0 w-[450px] h-[461px] opacity-50 blur-[60px] "
+						"-left-[14rem] bottom-0 w-[450px] h-[461px] opacity-[0.7] blur-[147px]"
 					}
-					gradients={[
-						"circle at center, var(--yellow-color), transparent 70%",
-						"circle at bottom, var(--blue-main), transparent 100%",
-					]}
 				/>
 			</div>
 		</footer>

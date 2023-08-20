@@ -1,7 +1,6 @@
 const GradientShape = (props) => {
 	const defaultGradients = [
-		"circle at center, var(--yellow-main), transparent 70%",
-		"circle at bottom, var(--blue-main), transparent 100%",
+		"134deg, var(--yellow-main) 0%, var(--blue-main) 100%",
 	];
 
 	const gradientStyle =
@@ -10,7 +9,7 @@ const GradientShape = (props) => {
 					.map((gradient) => `radial-gradient(${gradient})`)
 					.join(",")
 			: defaultGradients
-					.map((gradient) => `radial-gradient(${gradient})`)
+					.map((gradient) => `linear-gradient(${gradient})`)
 					.join(",");
 	return (
 		<div
