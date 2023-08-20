@@ -12,20 +12,21 @@ export { default as ellipse4 } from "./homePage/ellipse/ellipse4.svg";
 export { default as ellipse5 } from "./homePage/ellipse/ellipse5.svg";
 export { default as ellipse6 } from "./homePage/ellipse/ellipse6.svg";
 export { default as wavyShape } from "./homePage/wavy/wavyShape.png";
+export { default as wavyShape3XL } from "./homePage/wavy/wavyShape3xl.png";
 export { default as wavyShapeWeb } from "./homePage/wavy/wavyShape.webp";
-export { default as person1 } from "./homePage/people/person1.png";
-export { default as person2 } from "./homePage/people/person2.png";
-export { default as person3 } from "./homePage/people/person3.png";
-export { default as person4 } from "./homePage/people/person4.png";
-export { default as person5 } from "./homePage/people/person5.png";
-export { default as person6 } from "./homePage/people/person6.png";
-export { default as person7 } from "./homePage/people/person7.png";
+export { default as person1 } from "./homePage/people/person1.svg";
+export { default as person2 } from "./homePage/people/person2.svg";
+export { default as person3 } from "./homePage/people/person3.svg";
+export { default as person4 } from "./homePage/people/person4.svg";
+export { default as person5 } from "./homePage/people/person5.svg";
+export { default as person6 } from "./homePage/people/person6.svg";
+export { default as person7 } from "./homePage/people/person7.svg";
+// authentication-views
 export { default as topLeft } from "./authenticationViews/top-left-img.png";
 export { default as topRight } from "./authenticationViews/top-right-img.png";
 export { default as bottomLeft } from "./authenticationViews/bottom-img.png";
 export { default as google } from "./authenticationViews/Google.png";
 export { default as facebook } from "./authenticationViews/Facebook.png";
-
 // dashboard
 export { default as interest1 } from "./dashboard/icons/interest1.svg";
 export { default as interest2 } from "./dashboard/icons/interest2.svg";

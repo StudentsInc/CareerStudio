@@ -14,6 +14,7 @@ import {
 	person6,
 	person7,
 	wavyShape,
+	wavyShape3XL,
 	wavyShapeWeb,
 } from "../assets/images";
 import GoldStar from "../components/Home/GoldStart";
@@ -47,7 +48,7 @@ const Home = () => {
 								"top-[53rem] right-[93%] w-[200px] h-[150px] opacity-[0.3] blur-[10px] mix-blend-color-dodge"
 							}
 							gradients={[
-								"circle at center, var(--yellow-main) 10%, #000 100%",
+								"circle at center, var(--yellow-secondary) 10%, #000 100%",
 							]}
 						/>
 					</div>
@@ -57,7 +58,7 @@ const Home = () => {
 								"top-40 left-[120%] w-[150px] h-[150px] opacity-[0.4] blur-[10px] mix-blend-color-dodge"
 							}
 							gradients={[
-								"circle at center, var(--yellow-main) 10%, #000 100%",
+								"circle at center, var(--yellow-secondary) 10%, #000 100%",
 							]}
 						/>
 						<div data-aos='zoom-in' data-aos-duration='700'>
@@ -102,12 +103,12 @@ const Home = () => {
 						<Carousel_Sec />
 						<GradientShape
 							circleStyle={
-								"-left-[250px] bottom-0 w-[405.3px] h-[425.1px] opacity-[0.35] blur-[60px]"
+								"-left-[250px] bottom-0 w-[405.3px] h-[425.1px] opacity-[0.6] blur-[131px]"
 							}
 						/>
 						<GradientShape
 							circleStyle={
-								"-right-[158px] bottom-0 top-[450px] w-[310px] h-[316.5px] opacity-[0.3] blur-[60px]"
+								"-right-[158px] bottom-0 top-[450px] w-[310px] h-[316.5px] opacity-[0.6] blur-[147px]"
 							}
 						/>
 					</section>
@@ -143,7 +144,7 @@ const Home = () => {
 						</div>
 						<GradientShape
 							circleStyle={
-								"-right-[150px] -top-[25px] w-[516px] h-[528px] opacity-50 blur-[60px]"
+								"-right-[150px] -top-[25px] w-[516px] h-[528px] opacity-[0.6] blur-[147px]"
 							}
 						/>
 					</section>
@@ -152,7 +153,7 @@ const Home = () => {
 						data-aos-offset='400'
 						data-aos-duration='500'
 						className='join_info relative mt-[119px] flex flex-col'>
-						<h2 className='flex justify-end font-bold text-[2.56rem] sm:text-[3.13rem] leading-[60px] uppercase mb-[63px]'>
+						<h2 className='flex justify-end font-bold text-[2.56rem] sm:text-[3.13rem] uppercase mb-[63px]'>
 							Why Join the <br /> Student Inc. Squad
 						</h2>
 						{join_sec.map((info) => (
@@ -164,7 +165,7 @@ const Home = () => {
 								info={info.info}
 							/>
 						))}
-						<div className='moreJoin_info py-[100px] relative mt-[164px] sm:ms-[100px]'>
+						<div className='moreJoin_info py-[150px] relative md:my-[164px] sm:ms-[100px]'>
 							<p
 								data-aos='fade-right'
 								data-aos-offset='300'
@@ -179,13 +180,20 @@ const Home = () => {
 								data-aos='fade-left'
 								data-aos-duration='400'
 								className='img_container absolute bottom-1 sm:bottom-0 md:-bottom-[6rem] -z-10 -right-[11rem] xl:-right-[6rem]'>
-								<picture>
-									<source type='image/webp' srcSet={wavyShapeWeb}></source>
+								<picture width='772px'>
+									<source
+										type='image/webp'
+										media='(min-width: 767px)'
+										srcSet={wavyShapeWeb}></source>
+									<source
+										type='image/png'
+										media='(max-width: 768px)'
+										srcSet={wavyShape3XL}></source>
 									<img
 										className='rounded-[23px] opacity-60 md:opacity-100 scale-[1.7] md:scale-100'
 										src={wavyShape}
-										width='772px'
-										height='431px'
+										width='100%'
+										height='100%'
 										alt='Colorful wavy image representing XYZ'
 									/>
 								</picture>
@@ -193,17 +201,17 @@ const Home = () => {
 						</div>
 						<GradientShape
 							circleStyle={
-								" left-[250px] top-[-25px] w-[394px] h-[403px] opacity-50 blur-[60px] "
+								" left-[350px] top-[60px] w-[394px] h-[403px] opacity-[0.7] blur-[122px] "
 							}
 						/>
 						<GradientShape
 							circleStyle={
-								"-left-[158px] bottom-[800px] w-[317px] h-[325px] opacity-50 blur-[60px] "
+								"-left-[158px] bottom-[800px] w-[317px] h-[325px] opacity-[0.7] blur-[98px] "
 							}
 						/>
 						<GradientShape
 							circleStyle={
-								"left-[300px] bottom-[150px] w-[450px] h-[461px] opacity-50 blur-[60px] "
+								"left-[300px] bottom-[150px] w-[450px] h-[461px] opacity-[0.7] blur-[147px] "
 							}
 						/>
 					</section>
@@ -310,7 +318,7 @@ const Home = () => {
 						</div>
 						<GradientShape
 							circleStyle={
-								"right-[350px] top-[-50px] w-[450px] h-[461px] opacity-50 blur-[60px]"
+								"right-[250px] top-[0px] w-[450px] h-[461px] opacity-[0.7] blur-[147px]"
 							}
 						/>
 					</section>
