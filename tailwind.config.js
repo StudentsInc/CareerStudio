@@ -35,6 +35,7 @@ export default {
         purple: {
           color: "#7860BD",
           hover: "#6b55ac",
+          2: "#7594FB",
         },
         gray: {
           "progress-bar": "#6B7280",
