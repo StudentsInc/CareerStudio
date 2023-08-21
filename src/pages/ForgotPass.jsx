@@ -1,7 +1,7 @@
 import { logo } from "../assets/images";
 import Logo from "../components/Logo";
 import LeftSide from "../components/AuthenticationViews/LeftSide";
-import ForgotForm from "../components/AuthenticationViews/login/ForgotForm";
+import ForgotForm from "../components/AuthenticationViews/forgotPass/ForgotForm";
 
 const ForgotPass = () => {
 	const handleSubmit = (e) => {
