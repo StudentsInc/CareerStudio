@@ -21,7 +21,7 @@ export default {
         "body-mobile": "0.875rem", // 14px
       },
       colors: {
-        "background-color": "#131320", // "#121826", // "#131320",
+        "background-color": "#121826", // "#131320", // "#131320",
         "yellow-color": "#FFAB6B",
         "red-error": "#EF4444",
         "green-success": "#29A35A",
