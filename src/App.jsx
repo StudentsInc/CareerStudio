@@ -1,5 +1,5 @@
 import { BrowserRouter, Route, Routes } from "react-router-dom"
-import { Home, Dashboard } from "./pages"
+import { PersonalityReport} from "./pages"
 import { MainLayout } from "./layout/MainLayout"
 
 const App = () => {
@@ -7,15 +7,7 @@ const App = () => {
         <BrowserRouter>
             <Routes>
                 <Route element={<MainLayout />}>
-                    <Route path="/" element={<Home />} />
-                    <Route path="/dashboard" element={<Dashboard />} />
-                    <Route path="/settings" element={<></>} />
-                    <Route path="/bookings" element={<></>} />
-                    <Route path="/school" element={<></>} />
-                    <Route path="/school" element={<></>} />
-                    <Route path="/career" element={<></>} />
-                    <Route path="/major" element={<></>} />
-                    <Route path="/school" element={<></>} />
+                    <Route path="/personality-report" element={<PersonalityReport />} />
                 </Route>
             </Routes>
         </BrowserRouter>
