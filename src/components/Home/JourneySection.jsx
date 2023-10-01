@@ -35,7 +35,7 @@ const JourneySection = ({ GradientShape, journey_sec }) => {
 			</div>
 			<GradientShape
 				circleStyle={
-					"-right-[150px] -top-[25px] w-[516px] h-[528px] opacity-[0.6] blur-[147px]"
+					"-right-[150px] -top-[25px] w-[516px] h-[528px] opacity-[0.5] blur-[147px]"
 				}
 			/>
 		</section>

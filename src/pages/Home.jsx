@@ -15,17 +15,17 @@ const Home = () => {
 			<div className='absolute left[100px] md:left-[400px]'>
 				<GradientShape
 					circleStyle={
-						"-top-[100px] w-[200px] h-[200px] opacity-[0.6] blur-[10px] mix-blend-color-dodge"
+						"-top-[140px] w-[200px] h-[200px] opacity-[0.6] blur-[22px] mix-blend-color-dodge"
 					}
-					gradients={["circle at center, var(--blue-main) 0%, #000 100%"]}
+					gradients='bg-gradient-radial from-blue-brand 0% to-black 100%'
 				/>
 			</div>
 			<div className='hidden md:block'>
 				<GradientShape
 					circleStyle={
-						"top-0 right-0 w-[220px] h-[400px] opacity-[0.35] blur-[50px] mix-blend-color-dodge"
+						"top-0 right-0 w-[220px] h-[400px] opacity-[1] blur-[50px] mix-blend-color-dodge"
 					}
-					gradients={["circle at center, var(--blue-main) 50%, #000 100%"]}
+					gradients='bg-gradient-radial from-blue-brand 0% to-black 100%'
 				/>
 			</div>
 			<div className='container'>
@@ -33,11 +33,9 @@ const Home = () => {
 					<div className='hidden xl:block'>
 						<GradientShape
 							circleStyle={
-								"top-[53rem] right-[93%] w-[200px] h-[150px] opacity-[0.3] blur-[10px] mix-blend-color-dodge"
+								"top-[48rem] right-[92%] w-[250px] h-[250px] opacity-[0.4] blur-[0px] mix-blend-color-dodge"
 							}
-							gradients={[
-								"circle at center, var(--yellow-secondary) 10%, #000 100%",
-							]}
+							gradients='bg-gradient-radial from-yellow-secondary 0% to-black 100%'
 						/>
 					</div>
 					<HeroSection GradientShape={GradientShape} />

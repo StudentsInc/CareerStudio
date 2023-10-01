@@ -6,10 +6,10 @@ const NotFound = () => {
 		<div className='notFound min-h-screen flex items-center justify-center -my-[90px] overflow-hidden'>
 			<div className='flex items-center justify-center flex-col'>
 				<div className='notfound-404 relative xs:w-[700px] h-[290px] uppercase mx-auto text-center flex items-center justify-center'>
-					<h1 className=' w-full -z-10 max-[280px]:text-[125px] text-[140px] md:text-[225px] text-[#030005] font-black -tracking-[20px] '>
+					<h1 className=' w-full -z-10 max-[280px]:text-[125px] text-[140px] md:text-[225px] text-[#030005] font-black -tracking-[20px] [text-shadow:_-1px_-1px_0_#3D3BFF,_1px_1px_0_#F8A76F]'>
 						404
 					</h1>
-					<span className='w-full text-white font-bold max-[280px]:text-[14px] xs:text-[25px] md:text-[42px] tracking-[13px] ms-3 absolute bottom-[70px] left-1/2 -translate-x-1/2'>
+					<span className='w-full text-white font-bold max-[280px]:text-[14px] xs:text-[25px] md:text-[42px] tracking-[13px] ms-3 absolute bottom-[70px] left-1/2 -translate-x-1/2 [text-shadow:_0px_2px_0_#3D3BFF]'>
 						Page not found
 					</span>
 				</div>

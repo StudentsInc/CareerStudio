@@ -4,12 +4,12 @@ import { Link } from "react-router-dom";
 
 const HeroSection = () => {
 	return (
-		<section className='hero_sec pt-[75px] lg:w-[600px] max-xl:w-full relative text-white '>
+		<section className='hero_sec pt-[75px] lg:w-[600px] max-xl:w-full relative text-white'>
 			<GradientShape
 				circleStyle={
-					"top-40 left-[120%] w-[150px] h-[150px] opacity-[0.4] blur-[10px] mix-blend-color-dodge"
+					"top-30 left-[110%] w-[250px] h-[250px] opacity-[0.4] blur-[5px] mix-blend-color-dodge"
 				}
-				gradients={["circle at center, var(--yellow-secondary) 10%, #000 100%"]}
+				gradients={"bg-gradient-radial from-yellow-secondary 0% to-black 100%"}
 			/>
 			<div data-aos='zoom-in' data-aos-duration='700'>
 				<span className='tracking-[6px] font-normal text-[0.88rem]'>
