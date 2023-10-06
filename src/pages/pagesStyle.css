@@ -5,15 +5,15 @@
 
 @keyframes loader {
   0% {
-    transform: rotate(0deg)
+    transform: rotate(0deg);
   }
 
   50% {
-    transform: rotate(180deg)
+    transform: rotate(180deg);
   }
 
   100% {
-    transform: rotate(360deg)
+    transform: rotate(360deg);
   }
 }
 
@@ -21,7 +21,7 @@
 
 /* Not found page */
 .notfound-404 h1 {
-  text-shadow: -1px -1px 0 var(--blue-main), 1px 1px 0 var(--yellow-main)
+  text-shadow: -1px -1px 0 var(--blue-main), 1px 1px 0 var(--yellow-main);
 }
 
 .notfound-404 span {
@@ -29,3 +29,61 @@
 }
 
 /* end found page */
+
+/* start personality questions */
+/* .circle::before {
+  content: "";
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 3px solid #6b7280;
+} */
+
+.circle.answered::before {
+  content: "";
+  position: absolute;
+  background-color: #4544dc;
+  inset: 0;
+  border-radius: inherit;
+  width: 15px;
+  height: 15px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.circle.answered_full::after {
+  content: "✔";
+  position: absolute;
+  background-color: #4544dc;
+  inset: 0;
+  border-radius: inherit;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+}
+.circle.answered_full {
+  border-color: #4544dc;
+}
+
+.question.anwered_circle {
+  background-color: #4544dc;
+}
+
+.active {
+  background-color: #4544dc !important;
+}
+
+/* .circle:not(:last-child)::after {
+  content: "";
+  position: absolute;
+  width: 183px;
+  height: 3px;
+  background-color: #6b7280;
+  top: 12.5px;
+  left: 30px;
+} */
+/* end personality questions */
