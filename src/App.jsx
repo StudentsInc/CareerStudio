@@ -4,7 +4,6 @@ import { Routes, Route, useLocation, Navigate } from "react-router-dom";
 import AppLayout from "./AppLayout";
 import Loader from "./components/Loader";
 import { useTranslation } from "react-i18next";
-import LanguagePath from "./components/LanguagePath";
 const LazyAOS = lazy(() => import("./components/LazyAos"));
 const Home = lazy(() => import("./pages/Home"));
 const Signup = lazy(() => import("./pages/Signup"));
