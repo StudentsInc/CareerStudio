@@ -162,17 +162,6 @@
 
 /*end  Loader animation */
 
-/* Not found page */
-.notfound-404 h1 {
-  /* text-shadow: -1px -1px 0 var(--blue-main), 1px 1px 0 var(--yellow-main); */
-}
-
-.notfound-404 span {
-  text-shadow: 0 2px 0 var(--blue-main);
-}
-
-/* end found page */
-
 /* start left side style */
 .leftImages::after {
   content: "";

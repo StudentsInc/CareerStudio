@@ -1,0 +1,53 @@
+{
+  "buttons": {
+    "signUp": "سجّل",
+    "logIn": "تسجيل الدخول"
+  },
+  "menuItems": [
+    { "id": 1, "text": "مكتبة الوظائف", "to": "/[language]/career-library" },
+    { "id": 2, "text": "مكتبة التخصصات", "to": "/[language]/major-library" },
+    { "id": 3, "text": "مكتبة المدارس", "to": "/[language]/school-library" }
+  ],
+  "footer": {
+    "product": {
+      "title": "المنتج",
+      "links": [
+        { "text": "مكتبة الوظائف", "to": "/career-library" },
+        { "text": "مكتبة التخصصات", "to": "/major-library" },
+        { "text": "مكتبة الكليات", "to": "/college-library" },
+        { "text": "تقييم الشخصية", "to": "/personality-assessment" },
+        { "text": "تقييم الاهتمامات", "to": "/interests-assessment" },
+        { "text": "الإرشاد", "to": "/counseling" }
+      ]
+    },
+    "information": {
+      "title": "المعلومات",
+      "links": [
+        { "text": "الأسئلة الشائعة", "to": "/faq" },
+        { "text": "المدونة", "to": "/blog" },
+        { "text": "الدعم", "to": "/support" }
+      ]
+    },
+    "company": {
+      "title": "الشركة",
+      "links": [
+        { "text": "الدعم", "to": "/support-company" },
+        { "text": "وظائف", "to": "/careers" },
+        { "text": "اتصل بنا", "to": "/contact-us" }
+      ]
+    },
+    "subscribe": {
+      "title": "اشترك",
+      "placeholder": "عنوان البريد الإلكتروني",
+      "submit": "اشتراك",
+      "description": "لوريم إيبسوم دولور سيت آميت كونسيكتور. أوت آميت نيكوي نولا إست إن."
+    },
+    "bottomFooter": {
+      "termsPrivacyLinks": {
+        "terms": "الشروط",
+        "privacy": "الخصوصية",
+        "cookies": "ملفات تعريف الارتباط"
+      }
+    }
+  }
+}

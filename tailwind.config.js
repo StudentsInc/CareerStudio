@@ -13,6 +13,7 @@ export default {
         'xs': '480px',
       },
       fontFamily: {
+        cario: ['Cairo', 'sans-serif'],
         montserrat: ['Montserrat'],
         inter: ['Inter', 'sans-serif'],
         poppins: ['Poppins', 'sans-serif'],

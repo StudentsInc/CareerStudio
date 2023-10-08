@@ -1,0 +1,53 @@
+{
+  "buttons": {
+    "signUp": "Sign Up",
+    "logIn": "Log In"
+  },
+  "menuItems": [
+    { "id": 1, "text": "Career Library", "to": "/[language]/career-library" },
+    { "id": 2, "text": "Major Library", "to": "/[language]/major-library" },
+    { "id": 3, "text": "School Library", "to": "/[language]/school-library" }
+  ],
+  "footer": {
+    "product": {
+      "title": "Product",
+      "links": [
+        { "text": "Career Library", "to": "/career-library" },
+        { "text": "Major Library", "to": "/major-library" },
+        { "text": "College Library", "to": "/college-library" },
+        { "text": "Personality Assessment", "to": "/personality-assessment" },
+        { "text": "Interests Assessment", "to": "/interests-assessment" },
+        { "text": "Counseling", "to": "/counseling" }
+      ]
+    },
+    "information": {
+      "title": "Information",
+      "links": [
+        { "text": "FAQ", "to": "/faq" },
+        { "text": "Blog", "to": "/blog" },
+        { "text": "Support", "to": "/support" }
+      ]
+    },
+    "company": {
+      "title": "Company",
+      "links": [
+        { "text": "Support", "to": "/support-company" },
+        { "text": "Careers", "to": "/careers" },
+        { "text": "Contact us", "to": "/contact-us" }
+      ]
+    },
+    "subscribe": {
+      "title": "Subscribe",
+      "placeholder": "Email address",
+      "submit": "Subscribe",
+      "description": "Lorem ipsum dolor sit amet consectetur. Ut amet neque nulla est in."
+    },
+    "bottomFooter": {
+      "termsPrivacyLinks": {
+        "terms": "Terms",
+        "privacy": "Privacy",
+        "cookies": "Cookies"
+      }
+    }
+  }
+}
