@@ -5,7 +5,10 @@ import BurgerMenu from "./BurgerMenu";
 import logo from "../../assets/images/logo.svg";
 import { useTranslation } from "react-i18next";
 const Navbar = () => {
-  const { t } = useTranslation("nav&footer");
+  const {
+    t,
+    i18n: { language: lang },
+  } = useTranslation("nav&footer");
   return (
     <div className="navbar relative ">
       <div className="container">
@@ -26,13 +29,13 @@ const Navbar = () => {
             <div className="Auth_Btns flex items-center gap-[13px]">
               <Link
                 className="auth signup text-center w-[90px] xs:min-w-[118px] w-fit bg-white text-blue-brand px-3 xs:px-6 py-3 rounded-md uppercase font-semibold text-sm"
-                to="/signUp"
+                to={`${lang}/signUp`}
               >
                 {t("buttons.signUp")}
               </Link>
               <Link
                 className="auth login text-center w-[90px] xs:min-w-[118px] w-fit  bg-blue-brand text-whit px-3 xs:px-6 py-3 rounded-md uppercase font-semibold text-sm shadow-light-ouset"
-                to="/login"
+                to={`${lang}/login`}
               >
                 {t("buttons.logIn")}
               </Link>

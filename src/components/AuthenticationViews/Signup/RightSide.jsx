@@ -1,9 +1,14 @@
 import Logo from "../../Logo";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../../../pages/pagesStyle.css";
 import { logo } from "../../../assets/images";
 import Form from "./Form";
 const RightSide = () => {
+  const {
+    i18n: { language: lang },
+  } = useTranslation();
+  console.log(lang);
   const handleOnSubmit = (userInfo) => {
     console.log("click");
     console.log(userInfo);
@@ -30,12 +35,12 @@ const RightSide = () => {
 
           <h2 className="text-[#F2F2F2] mt-10 text-center">
             Already have an account?{" "}
-            <Link to={"/login"}>
+            <Link to={`/${lang}/login`}>
               <span className="text-blue-text ml-2">Login</span>
             </Link>
             {/* Demo link to reset page */}
             <br />
-            <Link to={"/resetPassword"}>
+            <Link to={`/${lang}/resetPassword`}>
               <span className="text-blue-text ml-2">Demo: Reset Password</span>
             </Link>
           </h2>
