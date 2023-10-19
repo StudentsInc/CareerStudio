@@ -31,14 +31,6 @@
 /* end found page */
 
 /* start personality questions */
-/* .circle::before {
-  content: "";
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  border-radius: 50%;
-  border: 3px solid #6b7280;
-} */
 
 .circle.answered::before {
   content: "";
@@ -77,13 +69,4 @@
   background-color: #4544dc !important;
 }
 
-/* .circle:not(:last-child)::after {
-  content: "";
-  position: absolute;
-  width: 183px;
-  height: 3px;
-  background-color: #6b7280;
-  top: 12.5px;
-  left: 30px;
-} */
 /* end personality questions */
